@@ -6,7 +6,7 @@ import (
 	"strconv"
 	"strings"
 
-	steambox "github.com/YouEclipse/steam-box/pkg"
+	steambox "github.com/journey-ad/steam-box/pkg"
 	"github.com/google/go-github/github"
 )
 
