@@ -13,16 +13,6 @@ import (
 func main() {
 	steamAPIKey := os.Getenv("STEAM_API_KEY")
 	steamID, _ := strconv.ParseUint(os.Getenv("STEAM_ID"), 10, 64)
-	appIDs := os.Getenv("APP_ID")
-	appIDList := make([]uint32, 0)
-
-	for _, appID := range strings.Split(appIDs, ",") {
-		appid, err := strconv.ParseUint(appID, 10, 32)
-		if err != nil {
-			continue
-		}
-		appIDList = append(appIDList, uint32(appid))
-	}
 
 	ghToken := os.Getenv("GH_TOKEN")
 	ghUsername := os.Getenv("GH_USER")
@@ -32,7 +22,7 @@ func main() {
 
 	ctx := context.Background()
 
-	lines, err := box.GetPlayTime(ctx, steamID, appIDList...)
+	lines, err := box.GetPlayTime(ctx, steamID)
 	if err != nil {
 		panic("GetPlayTime err:" + err.Error())
 	}
