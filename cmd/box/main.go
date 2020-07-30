@@ -28,18 +28,20 @@ func main() {
 	}
 
 	filename := "🎮 最近我在玩…"
-	gist, err := box.GetGist(ctx, gistID)
-	if err != nil {
-		panic("GetGist err:" + err.Error())
+
+	if updateGist {
+		gist, err := box.GetGist(ctx, gistID)
+		if err != nil {
+			panic("GetGist err:" + err.Error())
+		}
+
+		f := gist.Files[github.GistFilename(filename)]
+
+		f.Content = github.String(strings.Join(lines, "\n"))
+		gist.Files[github.GistFilename(filename)] = f
+
+		err = box.UpdateGist(ctx, gistID, gist)
+		if err != nil {
+			panic("UpdateGist err:" + err.Error())
+		}
 	}
-
-	f := gist.Files[github.GistFilename(filename)]
-
-	f.Content = github.String(strings.Join(lines, "\n"))
-	gist.Files[github.GistFilename(filename)] = f
-
-	err = box.UpdateGist(ctx, gistID, gist)
-	if err != nil {
-		panic("UpdateGist err:" + err.Error())
-	}
-}
