@@ -17,12 +17,12 @@ jobs:
     name: Upddate-gist
     runs-on: ubuntu-latest
     env:
-          GH_TOKEN: 309da2e38a0eaf8d006bbefdf134d1c2ebc23e1f
-          GIST_ID: 7dd9705e7927883a634d337e39b59d28
-          STEAM_API_KEY: 7E18E9AA45FA7810965CDC5743FE2990
-          STEAM_ID: STEAM_0:1:102677615
           UPDATE_OPTION: MARKDOWN
           MARKDOWN_FILE: README.md
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
+          GIST_ID: 7dd9705e7927883a634d337e39b59d28
+          STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
+          STEAM_ID: ${{ secrets.STEAM_ID }}
     steps:
 
     - name: Set up Go 1.x
