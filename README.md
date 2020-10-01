@@ -1,4 +1,9 @@
-#### osu! stat
+## Ricter Z 食用说明
+- Hacked by [Imouto koko](https://osu.ppy.sh/users/7679162) with ❤️
+- FFXIV 天下第一！
+- 无业游民
+
+#### - osu! stat
 ![](http://97.64.19.89:8080/api/v1/stat/4448675)
 
 <!-- steam-box start -->
