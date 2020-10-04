@@ -11,7 +11,7 @@
 ```text
 🎮 World of Warships                 🕘 29 hrs 23 mins
 🎮 雀魂麻将(MahjongSoul)                 🕘 12 hrs 11 mins
-🎮 NieR:Automata™                    🕘 3 hrs 33 mins
+🎮 NieR:Automata™                    🕘 4 hrs 33 mins
 🎮 Untitled Goose Game               🕘 0 hrs 6 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
