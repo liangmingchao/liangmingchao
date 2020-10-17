@@ -4,7 +4,7 @@
 - 喜欢猫猫，是个冇猫孤儿
 
 #### - osu! state
-![](http://97.64.19.89:8080/api/v1/stat/4448675?2)
+![](http://97.64.19.89:8080/api/v1/stat/4448675)
 
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
