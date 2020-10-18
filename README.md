@@ -11,7 +11,7 @@
 ```text
 🎮 World of Warships                 🕘 263 hrs 34 mins
 🎮 雀魂麻将(MahjongSoul)                 🕘 2 hrs 32 mins
-🎮 NieR:Automata™                    🕘 33 hrs 7 mins
+🎮 NieR:Automata™                    🕘 32 hrs 10 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
 <!-- steam-box end -->
