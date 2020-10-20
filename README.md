@@ -9,9 +9,9 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 284 hrs 6 mins
+🎮 World of Warships                 🕘 284 hrs 2 mins
 🎮 雀魂麻将(MahjongSoul)                 🕘 1 hrs 56 mins
-🎮 NieR:Automata™                    🕘 29 hrs 25 mins
+🎮 NieR:Automata™                    🕘 28 hrs 21 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
 <!-- steam-box end -->
