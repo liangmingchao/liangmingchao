@@ -9,7 +9,7 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 34 hrs 2 mins
+🎮 World of Warships                 🕘 33 hrs 30 mins
 🎮 NieR:Automata™                    🕘 7 hrs 58 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
