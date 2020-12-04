@@ -5,7 +5,7 @@
 #### - Steam playtime leaderboard
 ```text
 🔫 Counter-Strike: Global Offensive  🕘 0 hrs 44 mins
-🎮 World of Warships                 🕘 43 hrs 25 mins
+🎮 World of Warships                 🕘 43 hrs 16 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
 <!-- steam-box end -->
