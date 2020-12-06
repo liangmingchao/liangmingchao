@@ -6,7 +6,7 @@
 ```text
 🔫 Counter-Strike: Global Offensive  🕘 0 hrs 44 mins
 🎮 World of Warships                 🕘 46 hrs 28 mins
-🎮 Portal 2                          🕘 1 hrs 24 mins
+🎮 Portal 2                          🕘 2 hrs 9 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
 <!-- steam-box end -->
