@@ -5,7 +5,7 @@
 #### - Steam playtime leaderboard
 ```text
 🔫 Counter-Strike: Global Offensive  🕘 0 hrs 44 mins
-🎮 World of Warships                 🕘 44 hrs 40 mins
+🎮 World of Warships                 🕘 45 hrs 3 mins
 🎮 Portal 2                          🕘 1 hrs 24 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
