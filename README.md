@@ -6,7 +6,7 @@
 ```text
 🎮 World of Warships                 🕘 86 hrs 20 mins
 🎮 Portal 2                          🕘 2 hrs 9 mins
-🎮 Cyberpunk 2077                    🕘 11 hrs 41 mins
+🎮 Cyberpunk 2077                    🕘 11 hrs 46 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
 <!-- steam-box end -->
