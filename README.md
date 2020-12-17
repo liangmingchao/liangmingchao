@@ -4,7 +4,7 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 99 hrs 43 mins
+🎮 World of Warships                 🕘 100 hrs 2 mins
 🎮 Portal 2                          🕘 2 hrs 9 mins
 🎮 Cyberpunk 2077                    🕘 21 hrs 7 mins
 🎮 Apex Legends                      🕘 2 hrs 41 mins
