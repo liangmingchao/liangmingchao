@@ -4,10 +4,10 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 94 hrs 7 mins
+🎮 World of Warships                 🕘 93 hrs 8 mins
 🎮 Portal 2                          🕘 2 hrs 9 mins
 🎮 雀魂麻将(MahjongSoul)                 🕘 0 hrs 34 mins
-🎮 Cyberpunk 2077                    🕘 23 hrs 48 mins
+🎮 Cyberpunk 2077                    🕘 24 hrs 49 mins
 🎮 Apex Legends                      🕘 5 hrs 22 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
