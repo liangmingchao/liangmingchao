@@ -7,7 +7,7 @@
 🎮 World of Warships                 🕘 85 hrs 42 mins
 🎮 Portal 2                          🕘 2 hrs 9 mins
 🎮 雀魂麻将(MahjongSoul)                 🕘 0 hrs 34 mins
-🎮 Cyberpunk 2077                    🕘 30 hrs 54 mins
+🎮 Cyberpunk 2077                    🕘 31 hrs 27 mins
 🎮 Apex Legends                      🕘 5 hrs 22 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
