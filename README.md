@@ -4,7 +4,7 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 83 hrs 26 mins
+🎮 World of Warships                 🕘 83 hrs 43 mins
 🎮 雀魂麻将(MahjongSoul)                 🕘 0 hrs 34 mins
 🎮 Cyberpunk 2077                    🕘 29 hrs 42 mins
 🎮 Apex Legends                      🕘 11 hrs 10 mins
