@@ -6,7 +6,7 @@
 ```text
 🎮 World of Warships                 🕘 83 hrs 6 mins
 🎮 雀魂麻将(MahjongSoul)                 🕘 0 hrs 34 mins
-🎮 Cyberpunk 2077                    🕘 35 hrs 8 mins
+🎮 Cyberpunk 2077                    🕘 33 hrs 47 mins
 🎮 Apex Legends                      🕘 11 hrs 10 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
