@@ -6,7 +6,7 @@
 ```text
 🎮 World of Warships                 🕘 33 hrs 5 mins
 🎮 Cyberpunk 2077                    🕘 0 hrs 4 mins
-🎮 Apex Legends                      🕘 9 hrs 31 mins
+🎮 Apex Legends                      🕘 8 hrs 40 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
 <!-- steam-box end -->
