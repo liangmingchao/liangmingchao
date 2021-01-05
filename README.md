@@ -4,7 +4,7 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 38 hrs 14 mins
+🎮 World of Warships                 🕘 38 hrs 21 mins
 🎮 Cyberpunk 2077                    🕘 0 hrs 4 mins
 🎮 Apex Legends                      🕘 4 hrs 4 mins
 ```
