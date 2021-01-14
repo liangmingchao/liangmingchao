@@ -4,7 +4,7 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 57 hrs 2 mins
+🎮 World of Warships                 🕘 55 hrs 36 mins
 🎮 Apex Legends                      🕘 3 hrs 11 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
