@@ -6,6 +6,7 @@
 ```text
 🎮 World of Warships                 🕘 0 hrs 17 mins
 🎮 Cyberpunk 2077                    🕘 0 hrs 1 mins
+🎮 Grand Theft Auto IV: The Complete Edition 🕘 0 hrs 16 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
 <!-- steam-box end -->
