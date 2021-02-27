@@ -4,7 +4,7 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 0 hrs 17 mins
+🎮 World of Warships                 🕘 0 hrs 40 mins
 🎮 Cyberpunk 2077                    🕘 0 hrs 1 mins
 🎮 Grand Theft Auto IV: The Complete Edition 🕘 0 hrs 16 mins
 ```
