@@ -4,6 +4,7 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
+🎮 World of Warships                 🕘 0 hrs 17 mins
 🎮 Cyberpunk 2077                    🕘 0 hrs 1 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
