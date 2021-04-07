@@ -4,7 +4,7 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 40 hrs 13 mins
+🎮 World of Warships                 🕘 39 hrs 38 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
 <!-- steam-box end -->
