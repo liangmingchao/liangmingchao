@@ -4,8 +4,8 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 186 hrs 26 mins
-🎮 NITE Team 4                       🕘 4 hrs 8 mins
+🎮 World of Warships                 🕘 186 hrs 52 mins
+🎮 NITE Team 4                       🕘 5 hrs 39 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
 <!-- steam-box end -->
