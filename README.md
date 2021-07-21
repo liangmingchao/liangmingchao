@@ -4,7 +4,7 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 284 hrs 10 mins
+🎮 World of Warships                 🕘 283 hrs 10 mins
 🎮 NieR Replicant ver.1.22474487139... 🕘 22 hrs 19 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
