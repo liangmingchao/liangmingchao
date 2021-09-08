@@ -4,7 +4,7 @@
 <!-- steam-box start -->
 #### - Steam playtime leaderboard
 ```text
-🎮 World of Warships                 🕘 261 hrs 54 mins
+🎮 World of Warships                 🕘 260 hrs 49 mins
 🎮 雀魂麻将(MahjongSoul)                 🕘 0 hrs 14 mins
 ```
 <!-- Powered by https://github.com/YouEclipse/steam-box . -->
