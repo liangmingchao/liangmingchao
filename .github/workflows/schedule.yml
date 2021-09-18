@@ -20,7 +20,7 @@ jobs:
           UPDATE_OPTION: MARKDOWN
           MARKDOWN_FILE: README.md
           GH_TOKEN: ${{ secrets.GH_TOKEN }}
-          GIST_ID: 7dd9705e7927883a634d337e39b59d28
+          GIST_ID: 8a5f1c6573cfe601f14b84e2af89d2f9
           STEAM_API_KEY: ${{ secrets.STEAM_API_KEY }}
           STEAM_ID: ${{ secrets.STEAM_ID }}
     steps:
