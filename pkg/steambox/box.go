@@ -148,7 +148,7 @@ func getNameEmoji(id int, name string) string {
 		return emoji + name
 	}
 
-	var randomEmojiMap = [int]string{
+	var randomEmojiMap = map[int]string{
 		0: "🤡",
 		1: "👽",
 		2: "🤖",
