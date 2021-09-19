@@ -141,11 +141,26 @@ func getNameEmoji(id int, name string) string {
 		8930:   "🌏 ", // Sid Meier's Civilization V
 		644560: "🔞 ", // Mirror
 		359550: "🔫 ", // Tom Clancy's Rainbow Six Siege
+		105600: "👾",  // Terraria
 	}
 
 	if emoji, ok := nameEmojiMap[id]; ok {
 		return emoji + name
 	}
 
-	return "🎮 " + name
+	var randomEmojiMap = [int]string{
+		0: "🤡",
+		1: "👽",
+		2: "🤖",
+		3: "🐱‍💻",
+		4: "🐱‍🐉",
+		5: "🐱‍🚀",
+		6: "🦚",
+		7: "🐝",
+		8: "🐦",
+		9: "🐞",
+	}
+
+	return randomEmojiMap[id % len(randomEmojiMap)] + name
+	//return "🎮 " + name
 }
