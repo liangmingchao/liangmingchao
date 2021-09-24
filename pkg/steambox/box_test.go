@@ -27,12 +27,11 @@ func TestBox_GetPlayTime(t *testing.T) {
 	ghUsername := os.Getenv("GH_USER")
 
 	box := NewBox(steamAPIKey, ghUsername, ghToken)
-	lines, err := box.GetPlayTime(context.Background(), steamID, appIDList...)
+	lines, err := box.GetPlayTime(context.Background(), steamID)
 	if err != nil {
 		t.Error(err)
 	}
 	t.Log(strings.Join(lines, "\n"))
-
 }
 func TestBox_Readme(t *testing.T) {
 
