@@ -121,7 +121,8 @@ func (b *Box) UpdateMarkdown(ctx context.Context, title, filename string, conten
 }
 
 func pad(s, pad string, targetLength int) string {
-	padding := targetLength - utf8.RuneCountInString(s)
+	padding := targetLength - len(s)
+	//padding := targetLength - utf8.RuneCountInString(s)
 	if padding <= 0 {
 		return s
 	}
