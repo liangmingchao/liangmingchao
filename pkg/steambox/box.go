@@ -9,7 +9,7 @@ import (
 	"os"
 	"sort"
 	"strings"
-	"unicode/utf8"
+	//"unicode/utf8"
 
 	steam "github.com/journey-ad/steam-go/pkg"
 	"github.com/google/go-github/github"
