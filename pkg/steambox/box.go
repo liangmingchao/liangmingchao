@@ -5,14 +5,15 @@ import (
 	"context"
 	"fmt"
 	"io/ioutil"
-	"math"
 	"os"
 	"sort"
 	"strings"
+	"unicode"
+
 	//"unicode/utf8"
 
-	steam "github.com/journey-ad/steam-go/pkg"
 	"github.com/google/go-github/github"
+	steam "github.com/journey-ad/steam-go/pkg"
 )
 
 // Box defines the steam box.
@@ -55,8 +56,8 @@ func (b *Box) UpdateGist(ctx context.Context, id string, gist *github.Gist) erro
 // GetPlayTime gets the paytime form steam web API.
 func (b *Box) GetPlayTime(ctx context.Context, steamID uint64) ([]string, error) {
 	params := &steam.GetRecentlyPlayedGamesParams{
-		SteamID:                steamID,
-		Count:         					5,
+		SteamID: steamID,
+		Count:   MaximumLines,
 	}
 
 	gameRet, err := b.steam.IPlayerService.GetRecentlyPlayedGames(ctx, params)
@@ -70,23 +71,14 @@ func (b *Box) GetPlayTime(ctx context.Context, steamID uint64) ([]string, error)
 		return lines, nil
 	}
 
-	var max = 0
 	sort.Slice(gameRet.Games, func(i, j int) bool {
 		return gameRet.Games[i].PlaytimeForever > gameRet.Games[j].PlaytimeForever
 	})
 
-	for _, game := range gameRet.Games {
-		if max >= 5 {
-			break
-		}
-
-		hours := int(math.Floor(float64(game.Playtime2Weeks / 60)))
-		mins := int(math.Floor(float64(game.Playtime2Weeks % 60)))
-
-		line := pad(getNameEmoji(game.Appid, game.Name), " ", 50) + " " +
-			pad(fmt.Sprintf("🕘 %d hrs %d mins", hours, mins), "", 16)
+	games := gameRet.Games[:MaximumLines]
+	for _, game := range games {
+		line := makeGameLine(game)
 		lines = append(lines, line)
-		max++
 	}
 	return lines, nil
 }
@@ -120,9 +112,37 @@ func (b *Box) UpdateMarkdown(ctx context.Context, title, filename string, conten
 	return nil
 }
 
-func pad(s, pad string, targetLength int) string {
-	padding := targetLength - len(s)
-	//padding := targetLength - utf8.RuneCountInString(s)
+func getPlayTime(game *steam.Game) string {
+	return fmt.Sprintf("🕘 %d hrs %d mins", game.Playtime2Weeks/60, game.Playtime2Weeks%60)
+}
+
+func makeGameLine(game *steam.Game) string {
+	before := pad(getGameEmoji(game.Appid)+game.Name, " ", GameLinePrefixWidth)
+	after := pad(getPlayTime(game), " ", GameLineSuffixWidth)
+	return before + after
+}
+
+func getCharSpaceWidth(r rune) int {
+	if unicode.Is(unicode.Han, r) {
+		return 2
+	}
+	if unicode.IsSymbol(r) {
+		return 2
+	}
+	return 1
+}
+
+func getSentenceSpaceWidth(s string) int {
+	var width int
+	for _, r := range s {
+		width += getCharSpaceWidth(r)
+	}
+	return width
+}
+
+func pad(s, pad string, targetWidth int) string {
+	sw := getSentenceSpaceWidth(s)
+	padding := targetWidth - sw
 	if padding <= 0 {
 		return s
 	}
@@ -130,7 +150,7 @@ func pad(s, pad string, targetLength int) string {
 	return s + strings.Repeat(pad, padding)
 }
 
-func getNameEmoji(id int, name string) string {
+func getGameEmoji(id int) string {
 	// hard code some game's emoji
 	var nameEmojiMap = map[int]string{
 		730:    "🔫 ", // CS:GO
@@ -142,26 +162,25 @@ func getNameEmoji(id int, name string) string {
 		8930:   "🌏 ", // Sid Meier's Civilization V
 		644560: "🔞 ", // Mirror
 		359550: "🔫 ", // Tom Clancy's Rainbow Six Siege
-		105600: "👾 ",  // Terraria
+		105600: "👾 ", // Terraria
 	}
 
 	if emoji, ok := nameEmojiMap[id]; ok {
-		return emoji + name
+		return emoji
 	}
 
 	var randomEmojiMap = map[int]string{
 		0: "🤡 ",
 		1: "👽 ",
 		2: "🤖 ",
-		3: "🐱‍💻 ",
-		4: "🐱‍🐉 ",
-		5: "🐱‍🚀 ",
+		3: "💻 ",
+		4: "🐉 ",
+		5: "🚀 ",
 		6: "🦚 ",
 		7: "🐝 ",
 		8: "🐦 ",
 		9: "🐞 ",
 	}
 
-	return randomEmojiMap[(id / 10) % len(randomEmojiMap)] + name
-	//return "🎮 " + name
+	return randomEmojiMap[(id)%len(randomEmojiMap)]
 }
