@@ -161,6 +161,6 @@ func getNameEmoji(id int, name string) string {
 		9: "🐞 ",
 	}
 
-	return randomEmojiMap[id % len(randomEmojiMap)] + name
+	return randomEmojiMap[(id / 10) % len(randomEmojiMap)] + name
 	//return "🎮 " + name
 }
