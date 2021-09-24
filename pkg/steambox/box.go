@@ -113,7 +113,7 @@ func (b *Box) UpdateMarkdown(ctx context.Context, title, filename string, conten
 }
 
 func getPlayTime(game *steam.Game) string {
-	return fmt.Sprintf("🕘 %d hrs %d mins", game.Playtime2Weeks, game.Playtime2Weeks%60)
+	return fmt.Sprintf("🕘 %d hrs %d mins", game.Playtime2Weeks/60, game.Playtime2Weeks%60)
 }
 
 func makeGameLine(game *steam.Game) string {
