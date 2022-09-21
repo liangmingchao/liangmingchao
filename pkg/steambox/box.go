@@ -152,34 +152,36 @@ func pad(s, pad string, targetWidth int) string {
 
 func getGameEmoji(id int) string {
 	// hard code some game's emoji
-	var nameEmojiMap = map[int]string{
-		730:    "🔫 ", // CS:GO
-		222880: "🔫 ", // Insurgency
-		265630: "🔫 ", // Fistful of Frags
-		271590: "🚓 ", // GTA 5
-		578080: "🍳 ", // PUBG
-		431960: "💻 ", // Wallpaper Engine
-		8930:   "🌏 ", // Sid Meier's Civilization V
-		644560: "🔞 ", // Mirror
-		359550: "🔫 ", // Tom Clancy's Rainbow Six Siege
-		105600: "👾 ", // Terraria
+	var builtinEmojiMap = map[int]string{
+		730:     "🔫 ", // CS:GO
+		222880:  "🔫 ", // Insurgency
+		265630:  "🔫 ", // Fistful of Frags
+		271590:  "🚓 ", // GTA 5
+		578080:  "🍳 ", // PUBG
+		431960:  "💻 ", // Wallpaper Engine
+		8930:    "🌏 ", // Sid Meier's Civilization V
+		644560:  "🔞 ", // Mirror
+		359550:  "🔫 ", // Tom Clancy's Rainbow Six Siege
+		105600:  "👾 ", // Terraria
+		1329410: "🎲 ", // MahjongSoul
+		1061090: "🤴 ", // Jump King
+		1057090: "🧚 ", // Ori and the Will of the Wisps
 	}
 
-	if emoji, ok := nameEmojiMap[id]; ok {
+	if emoji, ok := builtinEmojiMap[id]; ok {
 		return emoji
 	}
 
-	var randomEmojiMap = map[int]string{
-		0: "🤡 ",
-		1: "👽 ",
-		2: "🤖 ",
-		3: "💻 ",
-		4: "🐉 ",
-		5: "🚀 ",
-		6: "🦚 ",
-		7: "🐝 ",
-		8: "🐦 ",
-		9: "🐞 ",
+	var randomEmojiMap = []string{
+		"👽 ",
+		"🤖 ",
+		"💻 ",
+		"🐉 ",
+		"🚀 ",
+		"🦚 ",
+		"🐝 ",
+		"🐦 ",
+		"🐞 ",
 	}
 
 	return randomEmojiMap[(id)%len(randomEmojiMap)]
